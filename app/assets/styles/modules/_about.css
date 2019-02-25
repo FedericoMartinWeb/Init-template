@@ -1,0 +1,58 @@
+.about{
+    position: relative;
+    background-color: #f6f6f6;
+    
+    &__description{
+        line-height: 21px;
+
+        &--quote{
+            font-family: 'Bad Script', cursive;
+            font-size: 2.3rem;  
+            margin-top: 15px;
+            display: inline-block;
+            line-height: 30px;
+
+            @mixin atSmall{
+                line-height: auto;
+            }
+        }
+    }
+    
+    &__img-corner{
+        display: none;
+    }
+    
+    &__img-code{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    
+    &__img-code > img{
+        width: 100px;    
+    }
+    
+    @mixin atSmall{
+        &__img-code > img{
+            width: 142px;    
+        }
+    }
+    
+    @mixin atLarge{
+        &__img-code > img{
+            display: none;    
+        }
+        
+        &__img-corner{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        
+        &__description{
+            width: 60%;
+        }
+    }
+}

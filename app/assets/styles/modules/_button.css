@@ -1,0 +1,18 @@
+.button{
+    text-decoration: none !important;
+    margin: 2rem 0;
+    display: inline-block;
+    padding: 1.3rem 3.5rem;
+    border: 2px solid #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all .4s ease-out;
+    color: #000 !important;
+    
+    &:hover{
+        color: #fff !important;
+        background-color: #000;
+    }
+}
