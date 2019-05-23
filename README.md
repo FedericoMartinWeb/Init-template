@@ -1,6 +1,4 @@
-# Federico Martin!
-
-# Init Template
+# Federico Martin Init Template!
 
 Kit de inicio para sitios web, con sass y gulp.
 
